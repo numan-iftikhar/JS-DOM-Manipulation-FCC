@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?cs=srgb&dl=pexels-janko-ferlic-590493.jpg&fm=jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+.container{
+    font-size: 1.5rem;
+    width: 550px;
+    height: 450px;
+    line-height: 1.5;
+}
+header{
+    background-color: gray;
+    width: 60%;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    margin: 1rem auto;
+    padding: .4rem;
+    border-radius: 10px;
+}
+.main-content{
+    background-color: aliceblue;
+    width: 70%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px whitesmoke;
+}
+.author{
+    color: rgb(255, 7, 255);
+}
+button{
+    font-size: 1.2rem;
+    padding: .2rem .6rem;
+    margin-top: .5rem;
+    background-color: gray;
+    color: white;
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+}
+button:active{
+    background-color: whitesmoke;
+}
