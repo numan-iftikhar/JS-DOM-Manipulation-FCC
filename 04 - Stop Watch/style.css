@@ -1,0 +1,54 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg?cs=srgb&dl=pexels-pixabay-277390.jpg&fm=jpg)
+    no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+.container {
+  width: 300px;
+  background-color: white;
+  height: 200px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 0 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#timer {
+  font-size: 3rem;
+  width: 100%;
+}
+
+.fa-play {
+  background-color: green;
+}
+.fa-arrow-rotate-left {
+  background-color: red;
+}
+.fa-pause {
+  background-color: yellow;
+}
+button{
+  background: none;
+  border: none;
+}
+i {
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  font-size: 2rem;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 12px;
+}
