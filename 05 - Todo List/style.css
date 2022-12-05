@@ -4,38 +4,53 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background: url(https://images.pexels.com/photos/1226398/pexels-photo-1226398.jpeg?cs=srgb&dl=pexels-suzy-hazelwood-1226398.jpg&fm=jpg) no-repeat center center/cover;
+body {
+  background: url(https://images.pexels.com/photos/1226398/pexels-photo-1226398.jpeg?cs=srgb&dl=pexels-suzy-hazelwood-1226398.jpg&fm=jpg)
+    no-repeat center center/cover;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.add-task{
+.add-task {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
   display: flex;
   width: 350px;
 }
-input{
+input {
   font-size: 1.2rem;
   padding: 3px;
   border-radius: 5px;
   flex: 1;
 }
-.btn-add{
+.btn-add {
   font-size: 1.2rem;
   margin-left: 5px;
   border: 1px solid green;
   padding: 1px 5px;
   border-radius: 5px;
   color: green;
-  transition: .3s;
+  transition: 0.3s;
   float: right;
 }
-.btn-add:hover{
+.btn-add:hover {
   background-color: green;
   color: white;
   cursor: pointer;
+}
+.task {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.btns-div:nth-child(1) {
+  background-color: none;
 }
