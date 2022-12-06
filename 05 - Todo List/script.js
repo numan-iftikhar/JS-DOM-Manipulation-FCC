@@ -15,6 +15,13 @@ tasks.addEventListener("click", (e) => {
       "line-through";
   }
 
+  // Edit task
+  else if (target.classList.contains("fa-pen")) {
+    inputTask.value =
+      target.parentElement.parentElement.nextElementSibling.innerText;
+    target.parentElement.parentElement.parentElement.remove();
+  }
+
   // Delete task
   else if (target.classList.contains("fa-trash-can")) {
     target.parentElement.parentElement.parentElement.remove();
@@ -41,6 +48,12 @@ function handleAddClick() {
   btnCheck.innerHTML = `<i class="fa-solid fa-check"></i>`;
   btnCheck.classList.add("btn-check");
   btnsDiv.appendChild(btnCheck);
+
+  // edit btn
+  let btnEdit = document.createElement("button");
+  btnEdit.innerHTML = `<i class="fa-solid fa-pen"></i>`;
+  btnEdit.classList.add("btn-edit");
+  btnsDiv.appendChild(btnEdit);
 
   // delete btn
   let btnDelete = document.createElement("button");

@@ -80,7 +80,8 @@ input {
 }
 
 .btn-delete,
-.btn-check {
+.btn-check,
+.btn-edit {
   width: 2rem;
   height: 2rem;
   cursor: pointer;
@@ -95,4 +96,7 @@ input {
 }
 .btn-check {
   background-color: #169606;
+}
+.btn-edit {
+  background-color: orange;
 }
