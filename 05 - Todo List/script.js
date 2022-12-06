@@ -6,6 +6,21 @@ const btnCheck = document.querySelector(".btn-check");
 // !FIXME: check-out and delete task functionality is pending
 btnAdd.addEventListener("click", handleAddClick);
 
+tasks.addEventListener("click", (e) => {
+  target = e.target;
+
+  // Check task
+  if (target.classList.contains("fa-check")) {
+    target.parentElement.parentElement.nextElementSibling.style.textDecoration =
+      "line-through";
+  }
+
+  // Delete task
+  else if (target.classList.contains("fa-trash-can")) {
+    target.parentElement.parentElement.parentElement.remove();
+  }
+});
+
 function handleAddClick() {
   // create a div to hold task
   let task = document.createElement("div");
@@ -16,7 +31,8 @@ function handleAddClick() {
   btnsDiv.classList.add("btns-div");
   task.appendChild(btnsDiv);
 
-  let li = document.createElement("span");
+  let li = document.createElement("div");
+  li.classList.add("task-text");
   li.innerText = `${inputTask.value}`;
   task.appendChild(li);
 
